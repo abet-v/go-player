@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Go Game</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div id="roomId"></div>
+    <div id="status"></div>
+    <div class="actions">
+      <button id="passBtn">Pass</button>
+      <button id="resignBtn">Resign</button>
+      <button id="scoreBtn">Scoring</button>
+      <button id="finalizeBtn">Finalize</button>
+    </div>
+  </div>
+  <div class="board-wrapper">
+    <canvas id="board" width="760" height="760"></canvas>
+    <div class="sidebar">
+      <div>Turn: <span id="turn"></span></div>
+      <div>Captured B: <span id="capB">0</span></div>
+      <div>Captured W: <span id="capW">0</span></div>
+      <div>Players: <span id="players"></span></div>
+      <div id="result"></div>
+      <div class="share">
+        Share link:
+        <input id="shareUrl" type="text" readonly />
+      </div>
+      <div class="help">Click intersections to place stones. In scoring mode, click stones to toggle dead groups.</div>
+    </div>
+  </div>
+
+  <script src="/main.js"></script>
+</body>
+</html>
+
